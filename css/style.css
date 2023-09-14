@@ -1,0 +1,201 @@
+html {
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: #0F2626;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:root {
+  --offsets: 3;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1890px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.form__text {
+
+  font-size: 20px;
+  color: white;
+
+}
+
+.form__input {
+
+  background-color: #0F2626;
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+  width: 50px;
+  margin-bottom: 20px;
+
+}
+
+.form__btn {
+
+  font-size: 20px;
+  padding: 20px;
+
+  background-color: #0F2626;
+  border: 1px solid white;
+  color: white;
+
+  background-image: linear-gradient(#509292, #509292);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 0%;
+  transition: background-size .5s, color .5s, border-color .5s, background-color .5s;
+}
+
+.form__btn:hover {
+  background-size: 100% 100%;
+
+  border-color: #509292;
+  color: #fff;
+}
+
+.form__btn:active {
+  border-color: transparent;
+}
+
+.container__button {
+  padding: 3px;
+  border: 1px solid black;
+  transition: background-color 0.2s ease-in-out,
+  color 0.2s ease-in-out;
+}
+
+.container__button:hover {
+  color: white;
+  background-color: black;
+}
+
+.container__button:active {
+  color: black;
+  background-color: aquamarine;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+
+}
+
+.timer {
+  padding: 0 0 10px 50px;
+  width: 100%;
+  color: white;
+  font-size: 30px;
+}
+
+.cards__list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  height: 600px;
+  width: 1100px;
+
+}
+
+.title {
+  margin: 0;
+  padding-top: 210px;
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+}
+
+.cards__item {
+  display: flex;
+  flex-direction: column;
+
+  width: calc((100% - (var(--offsets) * 10px)) / (var(--offsets) + 1));
+  height: calc((100% - (var(--offsets) * 10px)) / (var(--offsets) + 1));
+
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cards__btn {
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  color: white;
+  border: 1px solid white;
+}
+
+.card__background {
+  background-color: #509292;
+  color: transparent;
+  border: transparent;
+}
+
+.list__name {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.end-text {
+  color: white;
+  padding-top: 50px;
+  font-size: 70px;
+  margin-bottom: 40px;
+}
+
+.end-button {
+
+}
